@@ -1,7 +1,7 @@
 USE [Outlook]
 GO
 
-/****** Object:  Table [dbo].[tbl_menu]    Script Date: 9/18/2015 4:36:26 PM ******/
+/****** Object:  Table [dbo].[tbl_menu]    Script Date: 9/24/2015 4:06:47 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -13,12 +13,9 @@ GO
 
 CREATE TABLE [dbo].[tbl_menu](
 	[menu_id] [int] IDENTITY(1,1) NOT NULL,
-	[class_id] [varchar](4) NULL,
-	[menu_grp_nm] [varchar](100) NULL,
 	[menu_nm] [nvarchar](500) NOT NULL,
-	[menu_cl] [varchar](4) NULL,
+	[menu_cl] [varchar](10) NULL,
 	[group_cl] [varchar](20) NULL,
-	[is_status_cl] [bit] NULL,
 	[parent_menu_id] [int] NULL,
 	[is_active] [bit] NULL,
 	[sort_no] [int] NULL,

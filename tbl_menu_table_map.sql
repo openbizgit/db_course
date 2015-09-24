@@ -1,7 +1,7 @@
 USE [Outlook]
 GO
 
-/****** Object:  Table [dbo].[tbl_menu_table_map]    Script Date: 9/18/2015 4:36:40 PM ******/
+/****** Object:  Table [dbo].[tbl_menu_table_map]    Script Date: 9/24/2015 4:07:02 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -29,13 +29,6 @@ CREATE TABLE [dbo].[tbl_menu_table_map](
 GO
 
 SET ANSI_PADDING OFF
-GO
-
-ALTER TABLE [dbo].[tbl_menu_table_map]  WITH CHECK ADD  CONSTRAINT [FK_menu_table_map_menu_values] FOREIGN KEY([menu_id])
-REFERENCES [dbo].[tbl_menu] ([menu_id])
-GO
-
-ALTER TABLE [dbo].[tbl_menu_table_map] CHECK CONSTRAINT [FK_menu_table_map_menu_values]
 GO
 
 

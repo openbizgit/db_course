@@ -1,7 +1,7 @@
 USE [Outlook]
 GO
 
-/****** Object:  Table [dbo].[tbl_person]    Script Date: 9/18/2015 4:37:07 PM ******/
+/****** Object:  Table [dbo].[tbl_person]    Script Date: 9/24/2015 4:07:33 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -16,8 +16,11 @@ CREATE TABLE [dbo].[tbl_person](
 	[birth_dt] [datetime] NULL,
 	[gender] [char](1) NULL,
 	[created_dt] [datetime] NULL,
+	[created_user_id] [int] NULL,
 	[updated_dt] [datetime] NULL,
+	[updated_user_id] [int] NULL,
 	[deleted_dt] [datetime] NULL,
+	[deleted_user_id] [int] NULL,
  CONSTRAINT [PK_tbl_person] PRIMARY KEY CLUSTERED 
 (
 	[person_id] ASC
